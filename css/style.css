@@ -19,16 +19,20 @@ h6 {
 
 a{
   text-decoration: none;
+  color: var(--header-text);
+}
+
+a:hover{
+  color: var(--header-color);
 }
 
 p {
   margin: 0;
+  color: var(--header-te);
 }
 
 .custom-nav{
   background-color: var(--header-color);
-  position: sticky;
-  top: 0;
 }
 
 .custom-jumbo{
@@ -73,4 +77,12 @@ body {
   margin: auto;
  }
 
-  
+ #phone{
+  color: var(--header-text) !important;
+ }
+
+ .my-4{
+  border-color: var(--header-color);
+  border-width: 0.25rem;
+  width: 3rem;
+}
