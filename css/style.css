@@ -7,32 +7,36 @@
   --background-color: #e2e5cb;
   --header-color: #a2c4c6;
 }
+
+body{
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  color: var(--header-text);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6, 
+p {
   margin: 0;
   color: var(--header-text);
 }
 
 a{
   text-decoration: none;
-  color: var(--header-text);
 }
 
 a:hover{
   color: var(--header-color);
 }
 
-p {
-  margin: 0;
-  color: var(--header-te);
-}
-
 .custom-nav{
   background-color: var(--header-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .custom-jumbo{
@@ -52,7 +56,6 @@ p {
 
 .jumbo-content{
   background-color: var(--background-color);
-  color: var(--header-text);
   text-align: center;
   align-self: flex-end;
 }
@@ -64,15 +67,19 @@ body {
 #about, #skills, #work, #contact{
   padding: 10px;
   text-align: justify;
+  scroll-margin-top: 2.5em;
 }
 
 .heading{
   text-align: right;
   text-shadow: 3px 3px 5px var(--header-color);
 }
+
 #work img{
   max-height: 200px;
+  width: auto;
 }
+
  .cards-centered{
   margin: auto;
  }
@@ -85,4 +92,8 @@ body {
   border-color: var(--header-color);
   border-width: 0.25rem;
   width: 3rem;
+}
+
+footer{
+  text-align: right;
 }
